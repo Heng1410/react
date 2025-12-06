@@ -1,8 +1,12 @@
 import "./App.css";
+import NavBar from "./components/nav/NavBar";
+import Product from "./components/Products";
+
 // import Course from "./components/Course";
 // import Counter from "./states/counter";
 // import CounterApp from "./states/CounterApp";
-import TodoApp from "./components/todo_app";
+// import TodoApp from "./components/todo_app";
+
 
 
 function App() {
@@ -12,7 +16,9 @@ function App() {
       {/* <Counter /> */}
       {/* </Counter> */}
       {/* <CounterApp /> */}
-      <TodoApp />
+      {/* <TodoApp /> */}
+      <NavBar />
+      <Product />
     </>
   );
 }

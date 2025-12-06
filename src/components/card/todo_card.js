@@ -1,12 +1,8 @@
 import React from "react";
 
 function TodoCard(props) {
-  const {
-    inputValue,
-    setInputValue,
-    handleChange,
-    displayTask,
-  } = props.action;
+  const { inputValue, setInputValue, handleChange, displayTask, deleteAll } =
+    props.action;
   return (
     <>
       <h1 className="text-center">To-do List</h1>
@@ -16,7 +12,8 @@ function TodoCard(props) {
         className="m-2"
         value={inputValue}
       />
-      <button onClick={handleChange}>Add</button>
+      <button onClick={handleChange}>Add</button>{" "}
+      <button onClick={deleteAll}>Clear All</button>
       <div>
         <ul>
           {displayTask}
